@@ -1,0 +1,1 @@
+const t=document.getElementById("author-btn");t.addEventListener("click",(()=>{document.getElementById("author-name").classList.add("on"),t.classList.add("off")}));

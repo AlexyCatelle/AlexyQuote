@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --gradient: linear-gradient(to right bottom, #48217A, #0F1A63);
+  --color-text: rgba(255, 255, 255, .8);
+  --color-quote: white;
+  --color-action: #c96894; 
+}
+
+body {
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

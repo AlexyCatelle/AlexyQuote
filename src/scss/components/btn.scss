@@ -1,0 +1,17 @@
+.btn {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .1);
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  border-radius: 3px;
+  border: 0;
+  width: 100%;
+
+  &:hover {
+    color: white;
+    background-color: var(--color-action);
+  }
+}

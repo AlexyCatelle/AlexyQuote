@@ -1,0 +1,8 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+
+  @media screen and (max-width: 50rem) {
+    flex-direction: column;
+  }
+}

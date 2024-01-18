@@ -1,0 +1,47 @@
+.menu {
+  width: 12rem;
+  background-image: var(--gradient);
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 50rem) {
+    width: auto;
+  }
+
+  &-logo {
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--color-action);
+  }
+
+  &-list {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @media screen and (max-width: 50rem) {
+      display: none;
+    }
+  }
+
+  &-item {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    color: var(--color-text);
+
+    &:last-child {
+      border: 0;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .2);
+    }
+
+    &--current {
+      background-color: rgba(255, 255, 255, .1);
+    }
+  }
+}
