@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citation #1 - TopiQuote</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="menu">
+      <a class="menu-logo" href="/">TopiQuote</a>
+      <nav class="menu-list">
+        <a class="menu-item menu-item--current" href="/">Citation #1</a>
+        <a class="menu-item" href="/quote/2">Citation #2</a>
+        <a class="menu-item" href="/quote/3">Citation #3</a>
+        <a class="menu-item" href="/quote/4">Citation #4</a>
+        <a class="menu-item" href="/quote/5">Citation #5</a>
+        <a class="menu-item" href="/quote/6">Citation #6</a>
+        <a class="menu-item" href="/quote/7">Citation #7</a>
+        <a class="menu-item" href="/quote/8">Citation #8</a>
+        <a class="menu-item" href="/quote/9">Citation #9</a>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="content-box">
+        <h1 class="content-title">Citation n°<%=id%></h1>
+
+        <blockquote class="content-quote">
+          <p><%= content %></p>
+        </blockquote>
+        <div class="content-author">
+          <button class="content-btn" id="author-btn">Révéler l'auteur</button>
+          <span class="content-name" id="author-name"><%=author%></span>
+        </div>
+        <footer class="content-action">
+          <a class="btn" href="<%= nextQuote %>">Citation suivante</a>
+        </footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
